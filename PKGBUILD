@@ -7,7 +7,7 @@ _offline="false"
 _git="false"
 pkgname=encoding-tools
 pkgver=0.0.0.0.0.0.0.0.0.0.0.0.1
-_commit="87881fd4efb59111d56ded0c0e16cf64f89d1d24"
+_commit="5ddcb444a29235f6889d8aed4827562f89a5e5f8"
 pkgrel=1
 _pkgdesc=(
   "A collection of encoding scripts."
@@ -67,7 +67,7 @@ _tarname="${pkgname}-${_tag}"
     _sum='b245547bdcdbfeb09f400305a4b515b6d49635be90f560a39302761fc2688571'
   elif [[ "${_tag_name}" == "commit" ]]; then
     _tar="${_tarname}.zip::${_url}/archive/${_commit}.zip"
-    _sum="3839bb5d254f2e60b08f47b8408e9706dcb67a2e33459919dea66a9e0645a6aa"
+    _sum="104bfa7b3ed11598d7b4a16b222a00f8e781dfde1f2283920a3513d5b6ebe1a5"
   fi && \
     source+=(
       "${_tar}"
