@@ -1,0 +1,16 @@
+pkgbase = encoding-tools
+	pkgdesc = A collection of encoding scripts.
+	pkgver = 0.0.0.0.0.0.0.0.0.0.0.0.1
+	pkgrel = 1
+	url = https://github.com/themartiancompany/encoding-tools
+	arch = any
+	license = AGPL3
+	checkdepends = shellcheck
+	depends = coreutils
+	depends = libcrash-bash
+	provides = bin2txt=0.0.0.0.0.0.0.0.0.0.0.0.1
+	provides = txt2bin=0.0.0.0.0.0.0.0.0.0.0.0.1
+	source = encoding-tools-87881fd4efb59111d56ded0c0e16cf64f89d1d24.zip::https://github.com/themartiancompany/encoding-tools/archive/87881fd4efb59111d56ded0c0e16cf64f89d1d24.zip
+	sha256sums = 3839bb5d254f2e60b08f47b8408e9706dcb67a2e33459919dea66a9e0645a6aa
+
+pkgname = encoding-tools
