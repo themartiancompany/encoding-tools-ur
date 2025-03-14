@@ -42,9 +42,10 @@ if [[ ! -v "_evmfs" ]]; then
 fi
 _offline="false"
 _git="false"
+_py="python"
 pkgname=encoding-tools
-pkgver="0.0.0.0.0.0.0.0.0.0.0.1.1"
-_commit="bd17231cbe9d30eb548e41efd43a0e032fc8b85c"
+pkgver="0.0.0.0.0.0.0.0.0.0.1.1"
+_commit="7538d34bc479f776fdac835efdf4f488a6fd4a35"
 pkgrel=1
 _pkgdesc=(
   "A collection of encoding scripts."
@@ -73,7 +74,10 @@ optdepends=(
 [[ "${_os}" == "Android" ]] && \
   optdepends+=(
   )
-makedepends=()
+makedepends=(
+  'make'
+  "${_py}-docutils"
+)
 checkdepends=(
   "shellcheck"
 )
@@ -158,3 +162,4 @@ package() {
 }
 
 # vim: ft=sh syn=sh et
+sha256sums=('9eb5349b4c5e947b6f951d38d50677a61e4380cb0d7c2936a47aada349e5b651')
